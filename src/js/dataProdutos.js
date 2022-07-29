@@ -7,7 +7,7 @@ const produtos = [
         img: "./src/img/banana.png"
     },
     {
-        nome: 'Morangos',
+        nome: 'Morango',
         preco: 7,
         secao: 'Hortifruti',
         categoria: 'fruta',
@@ -29,31 +29,32 @@ const produtos = [
     },
     {
         nome: 'Leite',
-        preco: 5,
+        preco: 7,
         secao: 'Laticínio',
         categoria: 'Leite',
         img: './src/img/leite.png'
     },
     {
-        nome: 'Yorgute de Morango',
+        nome: 'Iogurte de Morango',
         preco: 3,
         secao: 'Laticínio',
-        categoria: 'leite',
-        img: './src/img/yogurt.jpeg'
-    },
-    {
-        nome: 'Bolo',
-        preco: 10,
-        secao: 'Panificadora',
-        categoria: 'doce',
-        img: './src/img/bolo.jpeg'
+        categoria: 'Leite',
+        img: './src/img/yogurte.jpeg'
     },
     {
         nome: 'Torta de Maçã',
         preco: 4,
         secao: 'Panificadora',
-        categoria: 'doce',
-        img: './src/img/tortaMaçã.jpeg'
-    }
+        categoria: 'doces',
+        img: './src/img/torta de maçã.jpg'
+    },
+    {
+        nome: 'Bolo',
+        preco: 10,
+        secao: 'Panificadora',
+        categoria: 'doces',
+        img: './src/img/bolo.jpeg'
+    } 
+   
     
 ]
