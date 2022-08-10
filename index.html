@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,21 +19,30 @@
     <!-- CABEÇALHO -->
     <header>
       <h1>Shop now</h1>
-    </header>
-    <!-- PARTE PRINCIPAL -->
-    <main>
       <section class="filtersContainer">
         <div id="botoesContainer">
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter" id="todosProdutos">
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filter"
+            id="todosProdutos"
+          >
             Todos Produtos
           </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter" id="fruta">
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filter"
+            id="fruta"
+          >
             Hortifruti
           </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter" id="panificadora">
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filter"
+            id="panificadora"
+          >
             Panificadora
           </button>
-          <button class="estiloGeralBotoes estiloGeralBotoes--filter" id="laticinios">
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--filter"
+            id="laticinios"
+          >
             Laticínios
           </button>
         </div>
@@ -43,6 +52,7 @@
             type="text"
             placeholder="Pesquisar por"
             class="campoBuscaPorNome"
+            id="search"
           />
           <button
             class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
@@ -53,32 +63,37 @@
       </section>
       <section class="priceContainer">
         <div>
-            <img src="./src/img/alert-circle.png" alt="exclamação de alerta">
-            <p>Valor total dos produtos da sessão selecionada</p>
+          <img src="./src/img/alert-circle.png" alt="exclamação de alerta" />
+          <p>Valor total dos produtos da sessão selecionada</p>
         </div>
-        <span>R$ 0.00</span>
+        <span class="somaProdutos">R$ 0.00</span>
       </section>
+    </header>
+    <!-- PARTE PRINCIPAL -->
+    <main>
+      <!-------------------------------------------------------------------------------------------------------------------------->
       <!-- CONTAINER DE PRODUTOS -->
       <section class="containerVitrine">
         <div class="containerListaProdutos">
-         <ul class="listaProdutos">
-                    <!-- Utilize esse item html como template para a construção da lista de produtos
-                    
-                    Você pode remover esses comentários depois que fizer a construção pelo DOM -->
-                    
-            
-                    <!-- <li>
-                        <img src="./src/img/maça.png" alt="Imagem maçã">
-                        <h3>Maçã</h3>
-                        <span>Hortifruti</span>
-                        <p>R$ 2.00</p>
-                    </li> -->
-                    
-                </ul>
+          <ul class="listaProdutos"></ul>
         </div>
       </section>
+      <!-------------------------------------------------------------------------------------------------------------------------->
+      <section class="carrinho">
+        <div class="parteCima">
+          <img src="./src/img/shopping-cart-add-free-icon-font.png" />
+          <h3 class="titulo-compras">Carrinho</h3>
+        </div> 
+            
+        <div class="produtos">
+          <ul class="produtosCarrinho"></ul>
+        </div>
+       
+      </section>
     </main>
+    <!-------------------------------------------------------------------------------------------------------------------------->
     <script src="src/js/dataProdutos.js"></script>
     <script src="./src/js/script.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------->
   </body>
 </html>
